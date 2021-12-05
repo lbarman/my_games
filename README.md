@@ -48,3 +48,25 @@ create keys `php artisan key:generate`
 create database `touch database/database.sqlite`, `php artisan db:seed`
 
 build `php artisan migrate`
+
+## Deploy
+
+docker-compose.yml
+```yaml
+version: '2'
+services:
+  partygames:
+    build:
+      context: ./data
+    ports:
+      - 127.0.0.1:8028:8000
+    container_name: partygames
+    volumes: 
+      - ./data:/var/www/
+```
+
+Mixed content error:
+https://stackoverflow.com/questions/34378122/load-blade-assets-with-https-in-laravel
+
+Manifest error
+https://github.com/koajs/basic-auth/issues/19

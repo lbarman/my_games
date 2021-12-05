@@ -28,7 +28,7 @@
 	<meta name="twitter:description" content="Jouer à Time's up, Brainstorm, Loups Garous... sur votre mobile">
 	<meta name="twitter:image" content="<?php echo config("app.url");?>/images/screenshot.png">
 
-	<link rel="manifest" href="/manifest.json"> 
+	<link rel="manifest" href="/manifest.json" crossorigin="use-credentials"> 
 	<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">

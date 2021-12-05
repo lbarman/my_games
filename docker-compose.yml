@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  partygames:
+    build: .
+    ports:
+      - "127.0.0.1:8028:8000"

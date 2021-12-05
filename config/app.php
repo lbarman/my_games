@@ -9,7 +9,7 @@ return [
 	/* Liste des roles */ 
 	'users_roles' =>array('User'=>"Utilisateur",'Admin'=>"Administrateur","Manager"=>"Manager"), 
 	
-	'google_analytics'=>'UA-63792649-1',
+	'google_analytics'=>'UA-0000000-1',
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -20,7 +20,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'My Games',
+    'name' => 'PartyGames',
 
     /*
     |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ return [
 	production
     */
 
-    'env' => env('APP_ENV', 'local'),
+    'env' => env('APP_ENV', 'production'),
 
     /*
     |--------------------------------------------------------------------------
@@ -61,7 +61,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://mygames.test'),
+    'url' => env('APP_URL', 'https://partygames.lbarman.ch'),
 
     /*
     |--------------------------------------------------------------------------
