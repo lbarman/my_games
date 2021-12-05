@@ -33,3 +33,18 @@ php artisan migrate
 
 - admin@admin.com / admin
 - manager@manager.com / manager
+
+
+## Fedora prerequisites
+
+sudo dnf install php-cli php-json php-mbstring php-dom php-pdo php-gd php-mysqlnd
+
+`.env`: change to `DB_CONNECTION` to `sqlite`, comment `#DB_DATABASE=homestead`, change `CACHE_DRIVER` to `array`
+
+Remove `"caouecs/laravel-lang": "~3.0"` from `composer.json` (not needed anymore)
+
+create keys `php artisan key:generate`
+
+create database `touch database/database.sqlite`, `php artisan db:seed`
+
+build `php artisan migrate`
