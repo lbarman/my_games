@@ -59,22 +59,6 @@ class Game extends Migration
 		
 		DB::table('gam_games')->insert(
 			array(
-				'name' => "Test",
-				'description' => "",
-				'status'=>0
-			)
-		); 
-		
-		DB::table('gam_games')->insert(
-			array(
-				'name' => "Petits meurtres et faits divers",
-				'description' => "",
-				'status'=>0
-			)
-		); 
-		
-		DB::table('gam_games')->insert(
-			array(
 				'name' => "Pictionary",
 				'description' => "",
 				'status'=>1
